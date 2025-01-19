@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -8,4 +8,9 @@ import { Component, input } from '@angular/core';
 })
 export class ButtonComponent {
   label = input.required<string>()
+  clb = output();
+
+  triggerCallback(){
+    this.clb.emit();
+  }
 }

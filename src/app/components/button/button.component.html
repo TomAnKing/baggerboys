@@ -1,3 +1,6 @@
-<button class="bg-secondaryBlue text-primaryBlue py-2 px-8 rounded-lg m-auto">
+<button
+  (click)="triggerCallback()"
+  class="m-auto rounded-lg bg-secondaryBlue px-8 py-2 font-bold text-primaryBlue"
+>
   {{ label() }}
 </button>
