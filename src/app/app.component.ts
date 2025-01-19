@@ -1,13 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { LoginComponent } from './pages/login/login.component';
+import {  Router, RouterLink, RouterOutlet } from '@angular/router';
+
 import { Location } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterLink, RouterOutlet,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -3,7 +3,7 @@
 >
   <div class="flex w-full flex-col gap-10">
     @for (link of links(); track $index) {
-      <app-button [label]="link.label" (clb)="goToRoute(link.route)" />
+      <app-button [label]="link.label" [routerLink]="link.route" />
     }
   </div>
   <div>

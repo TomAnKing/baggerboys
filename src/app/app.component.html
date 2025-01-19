@@ -1,4 +1,9 @@
 @if (!hideLogo()) {
-  <img src="logo.png" alt="Logo" class="m-auto mt-12 h-20" />
+  <img
+    src="logo.png"
+    alt="Logo"
+    class="m-auto mt-12 h-20"
+    [routerLink]="'/home'"
+  />
 }
 <router-outlet />
