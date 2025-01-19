@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
 import {  Router, RouterLink, RouterOutlet } from '@angular/router';
-
 import { Location } from '@angular/common';
 
 
@@ -19,8 +18,4 @@ export class AppComponent {
       this.hideLogo.set(location.path() === "")
     });
   }
-
-
-
- 
 }
