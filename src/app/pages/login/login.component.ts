@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { ButtonComponent } from "../../components/button/button.component";
 import { LoginFormComponent } from './login-form/login-form.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,12 @@ import { LoginFormComponent } from './login-form/login-form.component';
 export class LoginComponent {
   showLogin = signal<boolean>(false);
 
+  constructor( private router: Router ) { }
+
+
+  goToHome(){
+    // ...Your Logic...
+    this.router.navigate([ '/home' ])
+ }
 }
 
